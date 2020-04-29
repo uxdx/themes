@@ -1,0 +1,13 @@
+.instance {
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.notice {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.notice__message {
+  font-size: 20px;
+}
