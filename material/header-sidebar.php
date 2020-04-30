@@ -19,7 +19,7 @@
             // 머터리얼 디자인 적용하기 위한 인수 조정
             $args = array(
                 'container'       => 'div',
-                'container_class' => 'blue lighten-4',
+                'container_class' => '',
                 'theme_location' => 'footer',
                 'menu_class'      => 'sidenav sidenav-fixed blue lighten-4',
                 'menu_id' => 'nav-mobile',

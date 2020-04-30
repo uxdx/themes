@@ -1,4 +1,11 @@
 <?php
+// 전역 변수
+$rootUrl = 'http://localhost:81/';
+
+
+
+
+
 // css 로딩
 function load_stylesheets()
 {
@@ -7,6 +14,9 @@ function load_stylesheets()
     // css/materialize.css
     wp_register_style('material', get_template_directory_uri() . '/css/materialize.css', array(), 1, 'all');
     wp_enqueue_style('material');
+    // dist/material-components-web.css
+    wp_register_style('mdc', get_template_directory_uri() . '/dist/material-components-web.css', array(), 1, 'all');
+    wp_enqueue_style('mdc');
     // css/custom.css
     wp_register_style('custom', get_template_directory_uri() . '/css/custom.css', array(), 1, 'all');
     wp_enqueue_style('custom');
@@ -39,4 +49,7 @@ add_action('wp_enqueue_scripts', 'addjs');
 register_nav_menus(array(
     'primary' => __('Primary Menu'),
     'footer' => __('Footer Menu'),
+    'category' => __('Category Menu'),
+    'program-search' => __('Program Search'),
+    'program-setting' => __('Program Setting'),
 ));

@@ -5,7 +5,7 @@
     <div class="container">
         <h2 class="header center orange-text">뿌리줄기 Company</h2>
         <div class="center">
-            <a href="http://localhost:81/front-logined/" id="login-button" class="center btn-large waves-effect waves-light cyan">로그인</a>
+            <a href="<?php echo $rootUrl; ?>front-logined" id="login-button" class="center btn-large waves-effect waves-light cyan">로그인</a>
         </div>
     </div>
 </div>
