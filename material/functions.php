@@ -1,6 +1,6 @@
 <?php
 // 전역 변수
-$rootUrl = 'http://localhost:81/';
+$rootUrl = 'http://harujapan/';
 
 
 
