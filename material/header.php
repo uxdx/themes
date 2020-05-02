@@ -12,7 +12,7 @@
 
 <body>
     <!-- 전체 컨테이너 -->
-    <div class="row">
+    <div class="col">
         <!-- 헤더 -->
         <header>
             <nav class="light-blue lighten-1" role="navigation">
