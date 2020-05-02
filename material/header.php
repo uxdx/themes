@@ -17,7 +17,8 @@
         <header>
             <nav class="light-blue lighten-1" role="navigation">
 
-                <div class="nav-wrapper container"><a id="logo-container" href="https://harujapan.net"
+                <div class="nav-wrapper container"><a id="logo-container"
+                        href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>"
                         class="brand-logo">뿌리 줄기</a>
                     <!-- 프로그램 검색 메뉴 리스트 -->
                     <?php wp_nav_menu(array(
