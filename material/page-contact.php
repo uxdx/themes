@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-<div class="section">
+<div class="section" id="contact-form--section">
     <div class="container">
         <form class="col s12">
             <div class="row">
-                <div class="s4">
+                <div class="s4 l4">
                     <h4>성함</h4>
                 </div>
-                <div class="input-field col s8">
+                <div class="input-field col s8 l8">
                     <input id="last_name" type="text" class="validate">
                     <label for="last_name">성함</label>
                 </div>
