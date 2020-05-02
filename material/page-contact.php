@@ -4,7 +4,7 @@
         <form class="col s12">
             <div class="row">
                 <div class="s4 l4">
-                    <h4>성함</h4>
+                    성함(회사명)
                 </div>
                 <div class="input-field col s8 l8">
                     <input id="last_name" type="text" class="validate">
