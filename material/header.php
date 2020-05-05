@@ -12,53 +12,29 @@
 
 <body>
     <!-- 전체 컨테이너 -->
-    <div class="col">
+    <div class="row white">
         <!-- 헤더 -->
         <header>
-            <nav class="light-blue lighten-1" role="navigation">
-
-                <div class="nav-wrapper container"><a id="logo-container"
-                        href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>"
-                        class="brand-logo">뿌리 줄기</a>
-                    <!-- 프로그램 검색 메뉴 리스트 -->
-                    <?php wp_nav_menu(array(
-                        'container' => '',
-                        'theme_location' => 'program-search',
-                        'menu_class' => 'dropdown-content',
-                        'menu_id' => 'dropdown-program-search',
-                    )); ?>
-                    <!-- 프로그램 설정 메뉴 리스트 -->
-                    <?php wp_nav_menu(array(
-                        'container' => '',
-                        'theme_location' => 'program-setting',
-                        'menu_class' => 'dropdown-content',
-                        'menu_id' => 'dropdown-program-setting',
-                    )); ?>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <!-- 프로그램 검색 메뉴 -->
-                            <a class="dropdown-trigger" href="#!" data-target="dropdown-program-search">프로그램 검색<i
-                                    class="material-icons right">arrow_drop_down</i></a>
-                        </li>
-                        <li>
-                            <!-- 프로그램 설정 메뉴 -->
-                            <a class="dropdown-trigger" href="#!" data-target="dropdown-program-setting">프로그램 설정<i
-                                    class="material-icons right">arrow_drop_down</i></a>
-                        </li>
-                    </ul>
-                    <!-- 모바일 환경 -->
-                    <?php wp_nav_menu(array(
-                        'container' => '',
-                        'theme_location' => 'primary',
-                        'menu_class' => 'sidenav',
-                        'menu_id' => 'nav-mobile',
-                    )); ?>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                </div>
-            </nav>
+            <?php
+            // 머터리얼 디자인 적용하기 위한 인수 조정
+            $args = array(
+                'container'       => 'div',
+                'container_class' => '',
+                'theme_location' => 'footer',
+                'menu_class'      => 'sidenav sidenav-fixed black',
+                'menu_id' => 'nav-mobile',
+                ''
+            );
+            ?>
+            <?php wp_nav_menu($args); ?>
+            <div class="topbar">
+                <span class="topbar--icon--container">
+                    <i class="material-icons">menu</i>
+                </span>
+            </div>
         </header>
         <!-- 헤더 끝 -->
-        <!-- 메인 -->
-        <main>
-            <!-- 메인 컨테이너 -->
-            <div class="container">
+
+        <!-- 메인 컨테이너 -->
+        <main id="main-side">
+            <div class="container white s12 m12 xl12 z-depth-1">

@@ -1,4 +1,4 @@
-<?php get_header('sidebar'); ?>
+<?php get_header(); ?>
 <div class="section">
     <h2>asdfasdfsad</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi incidunt similique minima. Placeat quod modi quia minus voluptatum possimus autem molestias maiores, mollitia omnis commodi, ad, enim dolore rerum!</p>
@@ -31,4 +31,4 @@
 </div>
 <div class="divier"></div>
 <div class="section"></div>
-<?php get_footer('sidebar'); ?>
+<?php get_footer(); ?>

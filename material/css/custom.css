@@ -34,3 +34,7 @@
 #main-side .container {
   padding: 0px 20px 0px 20px;
 }
+
+.sidenav li > a {
+  color: white;
+}
