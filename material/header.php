@@ -6,6 +6,19 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: "GreatVibes";
+            src: url("wp-content/themes/material/font/GreatVibes-Regular.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: GreatVibes;
+            font-size: 44px;
+        }
+    </style>
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
@@ -37,4 +50,4 @@
 
         <!-- 메인 컨테이너 -->
         <main id="main-side">
-            <div class="container white s12 m12 xl12 z-depth-1">
+            <div class="container white s12 m12 xl12">
